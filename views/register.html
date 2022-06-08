@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title> Mercado liebre</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"rel="stylesheet" />
+        <link rel = "stylesheet" href = "css/register.css">
+    </head>
+<body>
+    <form action="/" method="POST">
+        <div class="detalles">
+            <label for="nombreyapellido"></label>
+            <input type="text" placeholder="Nombre y apellido" id="nombreyapellido" minlength="5" required/>
+        </div>
+        <div class="detalles">
+            <label for="nombreusuario"></label>
+            <input type="text" placeholder="Nombre de usuario" id="nombreusuario" minlength="3" required/>
+        </div>
+        <div class="detalles">
+            <label for="email"></label>
+            <input type="email" placeholder="E-mail" id="email" required/>
+        </div>
+        <div>
+            <label class="tamaño">Fecha de nacimiento</label>
+            <div class="detalles">
+                <label for="fecha"></label>
+                <input type="date" name="fecha" id="fecha" required/>
+            </div>
+        </div>
+        <div class="detalles">
+            <label for="domicilio"></label>
+            <input type="text" placeholder="Domicilio" id="domicilio" required/>
+        </div>
+        <div>
+            <label class="tamaño">Perfil del usuario</label>
+            <div>
+                <input type="radio" name="comprador" value="comprador">
+                <label>Comprador</label>
+            </div>
+            <div>
+                <input type="radio" name="vendedor" value="vendedor">
+                <label>Vendedor</label>
+            </div>
+        </div>
+        <div>
+            <label class="tamaño">Intereses</label>
+            <div>
+                <input type="checkbox" name="electro" value="electro">
+                <label for="electro">Electro</label>
+            </div>
+            <div>
+                <input type="checkbox" name="moda" value="moda">
+                <label for="moda">Moda</label>
+            </div>
+            <div>
+                <input type="checkbox" name="hogar" value="hogar">
+                <label for="hogar">Hogar</label>
+            </div>
+            <div>
+                <input type="checkbox" name="juguetería" value="juguetería">
+                <label for="juguetería">Juguetería</label>
+            </div>
+            <div>
+                <input type="checkbox" name="vidaSana" value="vidaSana">
+                <label for="vidaSana">Vida sana</label>
+            </div>
+        </div>
+        <div>
+            <label class="tamaño">Foto de usuario</label>
+            <div>
+                <input type="file" name="avatar" accept=".jpg, .png">
+            </div>
+        </div>
+        <div class="detalles">
+            <label for="password"></label>
+            <input type="password" placeholder="Contraseña" id= "password" minlength="6"required/> 
+        </div>
+        <div class="detalles">
+            <label for="password"></label>
+            <input type="password" placeholder="Confirmar contraseña" id= "password" minlength="6"required/> 
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+
+            <button type="reset">Borrar</button>
+        </div>
+    </form>
+</body>
+</html>
